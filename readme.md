@@ -23,9 +23,10 @@ DB_DIALECT=
 
 Configurar en el package.json
 ```bash
- "scripts": {
-    "dev" : "nodemon app.js"
-  }
+"scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
 ```
 
 Y para ejecutar el proyecto en modo desarrollo:
