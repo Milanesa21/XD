@@ -46,7 +46,14 @@ sequelize.authenticate()
 
 // Routes
 app.use("/", require("./routes/reserva.routes"));
+
+
 // TODO: Si la petición no coincide con ninguna de las rutas declaradas, mostrar error 404
+// 404 - Not found
+app.use((_req, res, next) => {
+    res.render('errors/404')
+  });
+  
 
 // Starting the server
 app.listen(process.env.PORT, () => console.log(`Servidor en http://localhost:${process.env.PORT}`));
