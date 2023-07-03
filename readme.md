@@ -33,3 +33,8 @@ Y para ejecutar el proyecto en modo desarrollo:
 ```bash
 npm run dev
 ```
+
+O para ejecutar el proyecto de manera normal:
+```bash
+npm start
+```
